@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*--------------------header-section---------------*/
+
+.heroSection{
+    background-color:#fff;
+    padding:25px 0 0 0;
+}
+
+.navbar ul{
+    display:inline-block;
+    text-align:center;
+}
+
+.navbar ul li{
+    display:inline-block;
+    
+    
+}
+
+.heroSection .logo{
+    display:inline-block;
+    padding:5px 0;
+}
+
+.navbar ul li a{
+    color:#006a4d;
+    padding:10px 9px;
+    margin:0 9px;
+    text-transform:uppercase;
+    line-height:44px;
+    position:relative;
+}
+
+
+.navbar ul li a.active::after,
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 4%;
+    background-color: #69be28;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .4s linear;
+
+}
+
+.navbar ul li a.active,
+.navbar ul li a.active::after,
+.navbar ul li a:hover::after{
+    width: 100%;
+    color:#69be28;
+}
+
+
+.btn a{
+    display:inline-block;
+    background-color:#69be28;
+    color:#fff;
+    text-transform:uppercase;
+    padding:15px 15px;
+    margin-top:15px;
+    text-align:right;
+    transition:all 0.4s linear;
+}
+
+.btn a:hover{
+    background-color:#fff;
+    color:#69be28;
+    box-shadow:4px 8px 12px black;
+}
+
+/*--------------------heroimg-section---------------*/
+
+
+.heroImg{
+    /* background-image:url("../images/Header\ Image.jpg"); */
+    height:400px;
+    background:linear-gradient(rgba(69,151,142,0.4), rgba(32,81,104,0.4)),
+     url('../images/Header\ Image.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.heroCaption{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.pri-heading{
+    font-size:32px;
+    font-weight:900;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.sec-heading{
+    font-size:58px;
+    font-weight:900;
+    color:#fff;
+    text-transform:uppercase;
+    margin-bottom:25px;
+
+}
+
+.heroCaption hr{
+    margin-bottom:20px;
+}
+
+.para{
+    font-size:22px;
+    font-weight:900;
+    color:#fff;
+}
+
+
+/*--------------------------event-caption-----------------------------*/
+
+
+.eventCaption{
+    padding:125px 0 120px 0;
+    background-color:#fff;
+}
+
+
+.event-heading h2{
+    text-transform:uppercase;
+    font-size:36px;
+    font-weight:900;
+    color:#006a4d;
+    margin-bottom:20px;
+}
+
+.evntInfo .para{
+    color:#000;
+    font-size:16px;
+    font-weight:400;
+    margin-bottom:20px;
+    width:85%;
+}
+
+.evntInfo .sec-heading{
+    font-size:20px;
+    font-weight:900;
+    color:#006a4d;
+    margin-bottom:10px;
+}
+
+
+/*------------------------speakers-section---------------------------*/
+
+.speakers{
+    background-color:#006a4d;
+    padding:100px 0;
+}
+
+.speakersInfo .pri-heading{
+    font-size:36px;
+    text-transform:uppercase;
+}
+
+.speakersInfo .para{
+    font-size:16px;
+    margin-bottom: 50px;
+}
+
+.speakersImg figure img{
+    width: 150px;
+    height:150px;
+    border-radius:50%;
+    background-color:aqua;
+    object-fit: cover;
+    margin-bottom:10px;
+}
+
+.speakersInfo h4{
+    font-size:18px;
+    font-weight:900;
+    color:#fff;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+.speakersInfo p{
+    font-size:14px;
+    font-weight:900;
+    color:#fff;
+    text-transform:capitalize;
+    margin-bottom:70px;
+}
+
+.btn button{
+    text-transform:uppercase;
+    font-weight:900;
+    font-size:18px;
+    color:#fff;
+    background-color:#006a4d;
+    border:2px solid white;
+    padding:15px 20px;
+    transform:all .4s linear;
+}
+
+.btn button:hover{
+    background-color:#fff;
+    color:#006a4d;
+    box-shadow:8px 8px 12px black;
+    border:2px solid black;
+}
+
+/*------------------------footer-section----------------------------*/
+
+.footer{
+    background-color:#3c3c3c;
+    padding:80px 0 75px 0;
+}
+
+.copy p{
+    font-weight:900;
+    font-size:16px;
+    color:#fff;
+}
+
+.footNavbar p{
+    font-size:18px;
+    font-weight:900;
+    color:#fff;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    margin-right:20px;
+}
+
+.footNavbar ul{
+    display:inline-block;
+}
+
+.footNavbar ul li{
+    display:inline-block;
+}
+
+.footNavbar ul li a i{
+    font-size:18px;
+    font-weight:900;
+    color: #fff;
+    outline:2px solid #fff;
+    border-radius:50%;
+    padding:8px;
+    margin-right:5px;
+    
+}
